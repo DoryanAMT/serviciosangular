@@ -9,8 +9,11 @@ import { Persona } from '../../models/persona';
   styleUrl: './personasapi.component.css'
 })
 export class PersonasapiComponent implements OnInit{
-  public personas!: Array<Persona>
-  constructor(private _service: ServicePersonas){}
+  public personas!: Array<Persona>;
+  
+  constructor(private _service: ServicePersonas){
+    this.personas = new Array<Persona>();
+  }
 
   ngOnInit():void{
     this._service.getPersonas().subscribe(response => {

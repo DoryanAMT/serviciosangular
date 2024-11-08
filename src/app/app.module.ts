@@ -5,7 +5,7 @@ import { BrowserModule, } from '@angular/platform-browser';
 import { ServiceComics } from './services/service.comics';
 import { ServicePersonas } from './services/service.persona';
 //  IMPOTAMOS LA LIBRERIA PARA PODER CONSUMIR APIS
-import { HttpClientModule, provideHttpClient } from '@angular/common/http';
+import { provideHttpClient } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,7 +25,6 @@ import { PersonasapiComponent } from './components/personasapi/personasapi.compo
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
   ],
   providers: [
     AppRoutingModule,
