@@ -1,0 +1,11 @@
+<h1>Api coches</h1>
+@for (car of coches; track car){
+    <div class="card" style="width: 18rem;">
+        <img src="{{car.imagen}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{car.marca}} {{car.modelo}}</h5>
+          <p class="card-text">Conductor: {{car.conductor}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+}

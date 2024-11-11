@@ -13,25 +13,39 @@ import { ComicComponent } from './components/comic/comic.component';
 import { LibreriaComponent } from './components/libreria/libreria.component';
 import { FormsModule } from '@angular/forms';
 import { PersonasapiComponent } from './components/personasapi/personasapi.component';
+import { PersonasstandaloneComponent } from './components/personasstandalone/personasstandalone.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { ServiceCoches } from './services/service.coches';
+import { CochesComponent } from './components/coches/coches.component';
+import { PlantillafuncionsimpleComponent } from './components/plantillafuncionsimple/plantillafuncionsimple.component';
+import { ServicePlantillas } from './services/service.plantillas';
+import { PlantillafuncionmultipleComponent } from './components/plantillafuncionmultiple/plantillafuncionmultiple.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComicComponent,
     LibreriaComponent,
-    PersonasapiComponent
+    PersonasapiComponent,
+    MenuComponent,
+    CochesComponent,
+    PlantillafuncionsimpleComponent,
+    PlantillafuncionmultipleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    PersonasstandaloneComponent,
   ],
   providers: [
     AppRoutingModule,
     ServiceComics,
     ServicePersonas,
-    provideHttpClient()
+    provideHttpClient(),
+    ServiceCoches,
+    ServicePlantillas
   ],
   bootstrap: [AppComponent]
 })
