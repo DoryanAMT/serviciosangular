@@ -36,7 +36,6 @@ import { PlantillafuncionmultipleComponent } from './components/plantillafuncion
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
     PersonasstandaloneComponent,
   ],
   providers: [
